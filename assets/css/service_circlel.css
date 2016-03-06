@@ -1,0 +1,887 @@
+/*
+    Project: Service Circle
+    Version: 1.0
+    Author: Gkiokan Sali
+    URI: //gkiokan.net
+    Date: 06.03.2016
+    Comments: -//- 
+
+    
+*/
+/* line 17, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+.service_circle_wrapper {
+  border: 0px solid blue;
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  border-radius: 50%; }
+  /* line 28, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+  .service_circle_wrapper .pie {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+    clip: rect(0px, 100px, 100px, 50px);
+    background: yellow;
+    overflow: hidden; }
+  /* line 42, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+  .service_circle_wrapper .element {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+    clip: rect(0px, 50px, 100px, 0px);
+    background: maroon; }
+
+/* line 60, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+.render {
+  margin-bottom: 100px; }
+
+/* line 81, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+p {
+  margin: 0;
+  padding: 4px; }
+
+/* line 83, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+div {
+  margin: 0;
+  padding: 0; }
+
+/* line 85, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 740px;
+  height: 680px;
+  margin: -340px 0 0 -370px;
+  padding: 0; }
+
+/* Header start */
+/* line 96, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#header {
+  text-align: center;
+  margin: 0 0 30px 0;
+  padding: 15px 0 15px 0; }
+
+/* line 102, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#txt_title {
+  color: #3d381b;
+  font-size: 34px;
+  text-align: center;
+  text-shadow: 0 -1px 2px rgba(255, 255, 255, 0.5); }
+
+/* line 109, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#txt_subtitle {
+  font-size: 17px;
+  text-align: center; }
+
+/* Header end */
+/* Label and percentage data start */
+/* line 116, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#labels {
+  position: absolute;
+  left: 540px;
+  top: 150px;
+  width: 120px; }
+
+/* line 123, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#percentage_wrapper {
+  position: absolute;
+  left: 665px;
+  top: 151px;
+  width: 50px;
+  height: 124px;
+  overflow: hidden; }
+
+/* line 132, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#percentage {
+  position: absolute;
+  clip: rect(0px, 50px, 125px, 0px); }
+
+/* line 137, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#labels ul, #percentage ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #333333; }
+
+/* line 145, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#labels li, #percentage li {
+  display: block;
+  margin: 0;
+  padding: 0 0 8px 0; }
+
+/* line 151, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#labels span {
+  display: block;
+  float: left;
+  width: 8px;
+  height: 8px;
+  margin: 5px 5px 0 0;
+  background: #FFFFFF; }
+
+/* line 160, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#labels ul :nth-child(1) span {
+  background: #0092B9; }
+
+/* line 161, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#labels ul :nth-child(2) span {
+  background: #86AD00; }
+
+/* line 162, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#labels ul :nth-child(3) span {
+  background: #F2B705; }
+
+/* line 163, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#labels ul :nth-child(4) span {
+  background: #D97904; }
+
+/* line 164, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#labels ul :nth-child(5) span {
+  background: #BC3603; }
+
+/* line 166, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#percentage p {
+  display: block;
+  width: 50px;
+  margin: 0;
+  padding: 0 0 8px 0;
+  float: left; }
+
+/* line 174, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#percentage ul {
+  position: absolute;
+  width: 300px; }
+
+/* line 179, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q2_2010:target #percentage ul {
+  left: -0px; }
+
+/* line 180, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q1_2010:target #percentage ul {
+  left: -50px; }
+
+/* line 181, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q4_2009:target #percentage ul {
+  left: -100px; }
+
+/* line 182, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q3_2009:target #percentage ul {
+  left: -150px; }
+
+/* line 183, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q2_2009:target #percentage ul {
+  left: -200px; }
+
+/* line 184, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q1_2005:target #percentage ul {
+  left: -250px; }
+
+/* Label and percentage data end */
+/* Slider (contains two chart div) start */
+/* line 188, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#slider {
+  width: 300px;
+  height: 350px;
+  margin: 0 auto;
+  padding: 0 auto;
+  overflow-y: hidden;
+  overflow-x: auto; }
+
+/* line 197, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#slider::-webkit-scrollbar {
+  /* webkit only */
+  height: 12px;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#beb8a1), to(#cfcab9));
+  -webkit-border-radius: 6px; }
+
+/* line 203, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#slider::-webkit-scrollbar-thumb {
+  /* webkit only */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#8c8775), to(#7f7a6a));
+  -webkit-border-radius: 6px; }
+
+/* line 208, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#pie_ico, #pyr_ico {
+  position: absolute;
+  width: 80px;
+  height: 26px;
+  top: 464px;
+  text-align: center; }
+
+/* line 216, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#pie_ico {
+  left: 137px; }
+
+/* line 217, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#pyr_ico {
+  left: 535px; }
+
+/* Slider end */
+/* Charts start */
+/* line 221, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#chart_holder {
+  width: 600px;
+  height: 350px;
+  margin: 0;
+  padding: 0; }
+
+/* line 228, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#pyr_chart, #pie_chart {
+  position: relative;
+  float: left;
+  width: 300px;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(rgba(255, 255, 255, 0.2))); }
+
+/* line 238, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#pyr_chart ul, #pie_chart ul {
+  list-style-type: none;
+  width: 300px;
+  height: 300px;
+  padding: 0;
+  margin: 0; }
+
+/* line 246, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#pyr_chart li, #pie_chart li {
+  position: absolute;
+  top: 0px;
+  width: 300px;
+  height: 300px;
+  padding: 0;
+  margin: 0; }
+
+/* line 255, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#pie_chart p {
+  width: 300px;
+  height: 300px;
+  padding: 0;
+  margin: 0; }
+
+/* line 262, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#pie_chart li p {
+  -webkit-transition: all 0.7s ease-out; }
+
+/* line 264, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#pie_chart span {
+  display: block;
+  width: 150px;
+  height: 300px; }
+
+/* line 266, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#pie_chart ul :nth-child(odd) {
+  clip: rect(0px, 300px, 300px, 150px); }
+
+/* line 268, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#pie_chart ul :nth-child(even) {
+  clip: rect(0px, 150px, 300px, 0px); }
+
+/* line 270, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+.pie_left {
+  -moz-border-radius-topleft: 150px;
+  -moz-border-radius-bottomleft: 150px;
+  -webkit-border-top-left-radius: 150px;
+  -webkit-border-bottom-left-radius: 150px;
+  border-top-left-radius: 150px;
+  border-bottom-left-radius: 150px; }
+
+/* line 279, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+.pie_right {
+  margin-left: 150px;
+  -moz-border-radius-topright: 150px;
+  -moz-border-radius-bottomright: 150px;
+  -webkit-border-top-right-radius: 150px;
+  -webkit-border-bottom-right-radius: 150px;
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px; }
+
+/* line 289, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#c1_l span {
+  background: #BC3603;
+  background-image: -moz-radial-gradient(left 45deg, circle closest-corner, #de3d00 10%, #BC3603 100%);
+  background-image: -webkit-gradient(radial, left center, 10, left center, 150, from(#de3d00), to(#BC3603)); }
+
+/* line 295, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#c1_r span {
+  background: #BC3603;
+  background-image: -moz-radial-gradient(right 45deg, circle closest-corner, #de3d00 10%, #BC3603 100%);
+  background-image: -webkit-gradient(radial, right center, 10, right center, 150, from(#de3d00), to(#BC3603)); }
+
+/* line 301, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#c2_l span {
+  background: #D97904;
+  background-image: -moz-radial-gradient(left 45deg, circle closest-corner, #fb8a00 10%, #D97904 100%);
+  background-image: -webkit-gradient(radial, left center, 10, left center, 150, from(#fb8a00), to(#D97904)); }
+
+/* line 307, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#c2_r span {
+  background: #D97904;
+  background-image: -moz-radial-gradient(right 45deg, circle closest-corner, #fb8a00 10%, #D97904 100%);
+  background-image: -webkit-gradient(radial, right center, 10, right center, 150, from(#fb8a00), to(#D97904)); }
+
+/* line 313, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#c3_l span {
+  background: #F2B705;
+  background-image: -moz-radial-gradient(left 45deg, circle closest-corner, #ffc517 10%, #F2B705 100%);
+  background-image: -webkit-gradient(radial, left center, 10, left center, 150, from(#ffc517), to(#F2B705)); }
+
+/* line 319, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#c3_r span {
+  background: #F2B705;
+  background-image: -moz-radial-gradient(right 45deg, circle closest-corner, #ffc517 10%, #F2B705 100%);
+  background-image: -webkit-gradient(radial, right center, 10, right center, 150, from(#ffc517), to(#F2B705)); }
+
+/* line 325, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#c4_l span {
+  background: #86AD00;
+  background-image: -moz-radial-gradient(left 45deg, circle closest-corner, #9bc800 10%, #86AD00 100%);
+  background-image: -webkit-gradient(radial, left center, 10, left center, 150, from(#9bc800), to(#86AD00)); }
+
+/* line 331, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#c4_r span {
+  background: #86AD00;
+  background-image: -moz-radial-gradient(right 45deg, circle closest-corner, #9bc800 10%, #86AD00 100%);
+  background-image: -webkit-gradient(radial, right center, 10, right center, 150, from(#9bc800), to(#86AD00)); }
+
+/* line 337, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#c5_l span {
+  background: #0092B9;
+  background-image: -moz-radial-gradient(left 45deg, circle closest-corner, #00addb 10%, #0092B9 100%);
+  background-image: -webkit-gradient(radial, left center, 10, left center, 150, from(#00addb), to(#0092B9)); }
+
+/* line 343, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#c5_r span {
+  background: #0092B9;
+  background-image: -moz-radial-gradient(right 45deg, circle closest-corner, #00addb 10%, #0092B9 100%);
+  background-image: -webkit-gradient(radial, right center, 10, right center, 150, from(#00addb), to(#0092B9)); }
+
+/*Pie chart data (degree value) */
+/* line 350, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#pie_chart ul :nth-child(1) p, #q2_2010:target #pie_chart ul :nth-child(1) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 351, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#pie_chart ul :nth-child(2) p, #q2_2010:target #pie_chart ul :nth-child(2) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 352, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#pie_chart ul :nth-child(3) p, #q2_2010:target #pie_chart ul :nth-child(3) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 353, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#pie_chart ul :nth-child(4) p, #q2_2010:target #pie_chart ul :nth-child(4) p {
+  -moz-transform: rotate(170deg);
+  -webkit-transform: rotate(170deg);
+  -o-transform: rotate(170deg); }
+
+/* line 354, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#pie_chart ul :nth-child(5) p, #q2_2010:target #pie_chart ul :nth-child(5) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 355, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#pie_chart ul :nth-child(6) p, #q2_2010:target #pie_chart ul :nth-child(6) p {
+  -moz-transform: rotate(152deg);
+  -webkit-transform: rotate(152deg);
+  -o-transform: rotate(152deg); }
+
+/* line 356, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#pie_chart ul :nth-child(7) p, #q2_2010:target #pie_chart ul :nth-child(7) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 357, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#pie_chart ul :nth-child(8) p, #q2_2010:target #pie_chart ul :nth-child(8) p {
+  -moz-transform: rotate(126deg);
+  -webkit-transform: rotate(126deg);
+  -o-transform: rotate(126deg); }
+
+/* line 358, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#pie_chart ul :nth-child(9) p, #q2_2010:target #pie_chart ul :nth-child(9) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 359, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#pie_chart ul :nth-child(10) p, #q2_2010:target #pie_chart ul :nth-child(10) p {
+  -moz-transform: rotate(36deg);
+  -webkit-transform: rotate(36deg);
+  -o-transform: rotate(36deg); }
+
+/* line 361, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q1_2010:target #pie_chart ul :nth-child(1) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 362, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q1_2010:target #pie_chart ul :nth-child(2) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 363, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q1_2010:target #pie_chart ul :nth-child(3) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 364, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q1_2010:target #pie_chart ul :nth-child(4) p {
+  -moz-transform: rotate(170deg);
+  -webkit-transform: rotate(170deg);
+  -o-transform: rotate(170deg); }
+
+/* line 365, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q1_2010:target #pie_chart ul :nth-child(5) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 366, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q1_2010:target #pie_chart ul :nth-child(6) p {
+  -moz-transform: rotate(153deg);
+  -webkit-transform: rotate(153deg);
+  -o-transform: rotate(153deg); }
+
+/* line 367, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q1_2010:target #pie_chart ul :nth-child(7) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 368, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q1_2010:target #pie_chart ul :nth-child(8) p {
+  -moz-transform: rotate(131deg);
+  -webkit-transform: rotate(131deg);
+  -o-transform: rotate(131deg); }
+
+/* line 369, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q1_2010:target #pie_chart ul :nth-child(9) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 370, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q1_2010:target #pie_chart ul :nth-child(10) p {
+  -moz-transform: rotate(42deg);
+  -webkit-transform: rotate(42deg);
+  -o-transform: rotate(42deg); }
+
+/* line 372, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q4_2009:target #pie_chart ul :nth-child(1) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 373, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q4_2009:target #pie_chart ul :nth-child(2) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 374, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q4_2009:target #pie_chart ul :nth-child(3) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 375, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q4_2009:target #pie_chart ul :nth-child(4) p {
+  -moz-transform: rotate(171deg);
+  -webkit-transform: rotate(171deg);
+  -o-transform: rotate(171deg); }
+
+/* line 376, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q4_2009:target #pie_chart ul :nth-child(5) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 377, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q4_2009:target #pie_chart ul :nth-child(6) p {
+  -moz-transform: rotate(154deg);
+  -webkit-transform: rotate(154deg);
+  -o-transform: rotate(154deg); }
+
+/* line 378, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q4_2009:target #pie_chart ul :nth-child(7) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 379, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q4_2009:target #pie_chart ul :nth-child(8) p {
+  -moz-transform: rotate(139deg);
+  -webkit-transform: rotate(139deg);
+  -o-transform: rotate(139deg); }
+
+/* line 380, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q4_2009:target #pie_chart ul :nth-child(9) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 381, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q4_2009:target #pie_chart ul :nth-child(10) p {
+  -moz-transform: rotate(50deg);
+  -webkit-transform: rotate(50deg);
+  -o-transform: rotate(50deg); }
+
+/* line 383, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q3_2009:target #pie_chart ul :nth-child(1) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 384, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q3_2009:target #pie_chart ul :nth-child(2) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 385, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q3_2009:target #pie_chart ul :nth-child(3) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 386, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q3_2009:target #pie_chart ul :nth-child(4) p {
+  -moz-transform: rotate(172deg);
+  -webkit-transform: rotate(172deg);
+  -o-transform: rotate(172deg); }
+
+/* line 387, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q3_2009:target #pie_chart ul :nth-child(5) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 388, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q3_2009:target #pie_chart ul :nth-child(6) p {
+  -moz-transform: rotate(156deg);
+  -webkit-transform: rotate(156deg);
+  -o-transform: rotate(156deg); }
+
+/* line 389, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q3_2009:target #pie_chart ul :nth-child(7) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 390, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q3_2009:target #pie_chart ul :nth-child(8) p {
+  -moz-transform: rotate(145deg);
+  -webkit-transform: rotate(145deg);
+  -o-transform: rotate(145deg); }
+
+/* line 391, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q3_2009:target #pie_chart ul :nth-child(9) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 392, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q3_2009:target #pie_chart ul :nth-child(10) p {
+  -moz-transform: rotate(61deg);
+  -webkit-transform: rotate(61deg);
+  -o-transform: rotate(61deg); }
+
+/* line 394, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q2_2009:target #pie_chart ul :nth-child(1) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 395, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q2_2009:target #pie_chart ul :nth-child(2) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 396, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q2_2009:target #pie_chart ul :nth-child(3) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 397, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q2_2009:target #pie_chart ul :nth-child(4) p {
+  -moz-transform: rotate(172deg);
+  -webkit-transform: rotate(172deg);
+  -o-transform: rotate(172deg); }
+
+/* line 398, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q2_2009:target #pie_chart ul :nth-child(5) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 399, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q2_2009:target #pie_chart ul :nth-child(6) p {
+  -moz-transform: rotate(158deg);
+  -webkit-transform: rotate(158deg);
+  -o-transform: rotate(158deg); }
+
+/* line 400, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q2_2009:target #pie_chart ul :nth-child(7) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 401, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q2_2009:target #pie_chart ul :nth-child(8) p {
+  -moz-transform: rotate(149deg);
+  -webkit-transform: rotate(149deg);
+  -o-transform: rotate(149deg); }
+
+/* line 402, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q2_2009:target #pie_chart ul :nth-child(9) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 403, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q2_2009:target #pie_chart ul :nth-child(10) p {
+  -moz-transform: rotate(66deg);
+  -webkit-transform: rotate(66deg);
+  -o-transform: rotate(66deg); }
+
+/* line 405, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q1_2005:target #pie_chart ul :nth-child(1) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 406, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q1_2005:target #pie_chart ul :nth-child(2) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 407, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q1_2005:target #pie_chart ul :nth-child(3) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 408, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q1_2005:target #pie_chart ul :nth-child(4) p {
+  -moz-transform: rotate(176deg);
+  -webkit-transform: rotate(176deg);
+  -o-transform: rotate(176deg); }
+
+/* line 409, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q1_2005:target #pie_chart ul :nth-child(5) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 410, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q1_2005:target #pie_chart ul :nth-child(6) p {
+  -moz-transform: rotate(167deg);
+  -webkit-transform: rotate(167deg);
+  -o-transform: rotate(167deg); }
+
+/* line 411, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q1_2005:target #pie_chart ul :nth-child(7) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 412, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q1_2005:target #pie_chart ul :nth-child(8) p {
+  -moz-transform: rotate(167deg);
+  -webkit-transform: rotate(167deg);
+  -o-transform: rotate(167deg); }
+
+/* line 413, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q1_2005:target #pie_chart ul :nth-child(9) p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+/* line 414, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q1_2005:target #pie_chart ul :nth-child(10) p {
+  -moz-transform: rotate(143deg);
+  -webkit-transform: rotate(143deg);
+  -o-transform: rotate(143deg); }
+
+/* line 416, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#pyr_chart li {
+  -webkit-transition: all 0.5s; }
+
+/* line 418, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#pyr_chart ul :nth-child(1) {
+  background: #BC3603;
+  background-image: -moz-radial-gradient(center 0deg, circle closest-corner, #de3d00 10%, #BC3603 100%);
+  background-image: -webkit-gradient(radial, center center, 10, center center, 150, from(#de3d00), to(#BC3603)); }
+
+/* line 424, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#pyr_chart ul :nth-child(2) {
+  background: #D97904;
+  background-image: -moz-radial-gradient(center 0deg, circle closest-corner, #fb8a00 10%, #D97904 100%);
+  background-image: -webkit-gradient(radial, center center, 10, center center, 150, from(#fb8a00), to(#D97904));
+  height: 292px; }
+
+/* line 432, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#pyr_chart ul :nth-child(3) {
+  background: #F2B705;
+  background-image: -moz-radial-gradient(center 0deg, circle closest-corner, #ffc517 10%, #F2B705 100%);
+  background-image: -webkit-gradient(radial, center center, 10, center center, 150, from(#ffc517), to(#F2B705));
+  height: 277px; }
+
+/* line 439, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#pyr_chart ul :nth-child(4) {
+  background: #86AD00;
+  background-image: -moz-radial-gradient(center 0deg, circle closest-corner, #9bc800 10%, #86AD00 100%);
+  background-image: -webkit-gradient(radial, center center, 10, center center, 150, from(#9bc800), to(#86AD00));
+  height: 255px; }
+
+/* line 446, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#pyr_chart ul :nth-child(5) {
+  background: #0092B9;
+  background-image: -moz-radial-gradient(center 0deg, circle closest-corner, #00addb 10%, #0092B9 100%);
+  background-image: -webkit-gradient(radial, center center, 10, center center, 150, from(#00addb), to(#0092B9));
+  height: 180px; }
+
+/* line 453, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#pyr_chart ul :nth-child(6) {
+  width: 0;
+  height: 0;
+  border-color: transparent #d8d6cb transparent #d8d6cb;
+  border-width: 0px 150px 300px 150px;
+  border-style: solid; }
+
+/* button panel start */
+/* line 463, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#btn_panel {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 420px;
+  padding-top: 35px; }
+
+/* line 471, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#btn_panel ul {
+  list-style-type: none;
+  display: inline;
+  padding: 0;
+  margin: 0; }
+
+/* line 478, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#btn_panel li {
+  float: left;
+  padding: 5px; }
+
+/* line 483, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#btn_panel span:first-child {
+  display: block;
+  font-size: 22px;
+  padding: 5px 0 0 0; }
+
+/* line 484, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#btn_panel span:last-child {
+  display: block;
+  font-size: 16px;
+  padding: 7px 0 0 0; }
+
+/* line 486, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#btn_panel li a {
+  display: block;
+  width: 60px;
+  height: 65px;
+  text-decoration: none;
+  text-align: center;
+  color: #565446;
+  background: #fcfcfc;
+  background-image: -moz-linear-gradient(100% 40% 270deg, #FFFFFF, #eaeaea, #f5f5f5 100%);
+  background-image: -webkit-gradient(linear, 0% 45%, 0% 69%, from(#FFFFFF), to(#EDEDED), color-stop(0.4, #F7F7F7));
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: #c0bca7 0px 1px 0px;
+  -webkit-box-shadow: #c0bca7 0px 1px 0px;
+  box-shadow: #c0bca7 0px 1px 0px;
+  -webkit-transition: all 0.3s ease-out;
+  opacity: .5; }
+
+/* line 506, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#btn_panel li:last-child a {
+  color: #c33702;
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  opacity: 1; }
+
+/* line 508, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q1_2005:target #btn_panel li:last-child a, #q2_2009:target #btn_panel li:last-child a, #q3_2009:target #btn_panel li:last-child a, #q4_2009:target #btn_panel li:last-child a, #q1_2010:target #btn_panel li:last-child a {
+  color: #565446;
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
+  opacity: .5; }
+
+/* line 509, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q1_2005:target #btn_panel li:nth-child(1) a {
+  color: #c33702;
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  opacity: 1; }
+
+/* line 510, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q2_2009:target #btn_panel li:nth-child(2) a {
+  color: #c33702;
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  opacity: 1; }
+
+/* line 511, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q3_2009:target #btn_panel li:nth-child(3) a {
+  color: #c33702;
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  opacity: 1; }
+
+/* line 512, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q4_2009:target #btn_panel li:nth-child(4) a {
+  color: #c33702;
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  opacity: 1; }
+
+/* line 513, D:/_svr/html_service_circle/assets/css/service_circlel.scss */
+#q1_2010:target #btn_panel li:nth-child(5) a {
+  color: #c33702;
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  opacity: 1; }
+
+/* button panel end */
+
+/*# sourceMappingURL=service_circlel.css.map */
